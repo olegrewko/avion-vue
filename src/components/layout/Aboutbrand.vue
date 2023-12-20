@@ -11,10 +11,10 @@
                 :src="e.img" 
                 :alt="e.title">
                 <h4 class="about-brand-element__title">
-                    Next day as standard
+                    {{ e.title }}
                 </h4>
                 <span class="about-brand-element__desc">
-                    Order before 3pm and get your order the next day as standard
+                    {{ e.desc }}
                 </span>
             </div>
         </div>
@@ -48,11 +48,13 @@ const aboutbrands = [
 </script>
 <style lang="scss">
 .about-brand {
-   padding: 80px 80px 130px 80px;
+//    width: 1440px;
+//    height: 476px; 
+   padding: 80px 80px 130px 80px ;
    &__title {
     text-align: center;
     margin: 0 0 74px 0;
-    color: var(--Dark-Primary, #2A254B);
+    color:  #2A254B;
 
     /* Headings / H3 */
     font-family: Clash Display;
@@ -62,19 +64,21 @@ const aboutbrands = [
     line-height: 140%; /* 33.6px */
    }
    &-elements {
+    
     display: grid;
-    grid-template-columns: repeat(4, 210px);
+    grid-template-columns: repeat(4, 320px);
     justify-content: space-between;
+    gap: 10px;
+    text-align: left;
 
-   }
-   &-elements {
+  
     &__image {
         display: block;
         margin-bottom: 12px;
     }
     &__title {
         margin: 0 0 12px 0;
-        color: var(--Dark-Primary, #2A254B);
+        color:  #2A254B;
 
         /* Headings / H4 */
         font-family: Clash Display;
@@ -85,8 +89,8 @@ const aboutbrands = [
     }
     &__desc {
         margin: 0 0 12px 0;
-        color: var(--Dark-Primary, #2A254B);
-
+        color:  #2A254B;
+        text-align: left;
         /* Body/Medium */
         font-family: Satoshi;
         font-size: 16px;
@@ -98,5 +102,10 @@ const aboutbrands = [
    }
   
 }
-
+.about-brand-element {
+    width: 280px;
+    height: auto;
+    padding: 30px;
+    background-color: #F9F9F9;
+}
 </style>

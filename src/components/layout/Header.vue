@@ -64,9 +64,9 @@ const menu = [
 .header {
   background: #fff;
   font-weight: bold;
-//   padding: 0 20px;
+  padding: 0 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
-//   max-width: 1440px;
+  width: 1440px;
   height: 132px;
 
 //   display: flex;
@@ -81,10 +81,17 @@ const menu = [
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     margin: 0 20px;
     height: 70px;
+    &-search {
+        display: flex;
+        justify-content: start;
+    }
     &-right {
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        &__user {
+            margin-left: 10px;
+        }
     }
   }
   &-logo {
@@ -103,7 +110,7 @@ const menu = [
   &-menu {
     background: #fff;
     font-weight: bold;
-    padding: 0 20px;
+    // padding: 0 20px;
     color: #22202E;
     height: 62px;
     display: flex;
@@ -111,9 +118,14 @@ const menu = [
     align-items: center;
     &__link {
         margin: 0 20px;
+        color: #22202E;
         text-decoration: none;
+        cursor: pointer;
+        transition: all .3s;
         &:hover {
             text-decoration: underline;
+            cursor: pointer;
+            transition: all .3s;
         }
     }
    

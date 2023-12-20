@@ -1,13 +1,15 @@
 <template>
     <div class="product">
+        <div class="product-center">
         <a href="">
             <img 
             class="product-image" 
             :src="img" 
             :alt="title">
         </a>
-        <a class="product-name" href="">{{ title }}</a>
+        <h4 class="product-name" href="">{{ title }}</h4>
         <span class="product-price">{{ price }}</span>
+        </div>
     </div>
 </template>
 <script setup>
@@ -21,7 +23,7 @@ const props = defineProps({
         required: true
     },
     price: {
-        type: String,
+        type: Number,
         required: true
     },
 }) 
@@ -29,18 +31,27 @@ const props = defineProps({
 </script>
 <style lang="scss" scoped>
 .product {
+    display: flex;
+    justify-content: center;
+    &-center {
+        
+        
+
+    }
     &-img {
         display: block;
+        text-align: left;
         margin-bottom: 24px;
     }
     &-name {
         display: block;
-        padding: 0 80px;
+        text-align: left;
+        // padding: 0 80px;
         margin-bottom: 8px;
         color:  #2A254B;
 
         /* Headings / H4 */
-        // font-family: Clash Display;
+        font-family: Clash Display;
         font-size: 20px;
         font-style: normal;
         font-weight: 400;
@@ -48,11 +59,12 @@ const props = defineProps({
     }
     &-price {
         display: block;
+        text-align: left;
         margin-bottom: 0px;
         color:  #2A254B;
 
         /* Headings / H4 */
-        // font-family: Clash Display;
+        font-family: Clash Display;
         font-size: 18px;
         font-style: normal;
         font-weight: 400;

@@ -1,12 +1,15 @@
 <template>
+<div class="products-container">
     <div class="products">
-    <Product
-    v-for="product in products"
-     :key="product.id"
-     :img="product.img"
-     :title="product.title"
-     :price="product.price" />
+        <Product
+        v-for="product in products"
+        :key="product.id"
+        :img="product.img"
+        :title="product.title"
+        :price="product.price" />
      </div>
+     <a class="products-link" href="">View more</a>
+</div>
 </template>
 <script setup>
 import {ref} from 'vue'
@@ -21,27 +24,42 @@ const products = ref([
     {
         id: 1,
         img: '/img/p2.jpg',
-        title: 'The Dandy chair',
+        title: 'The Silky Vase',
         price: 125
     },
     {
         id: 2,
         img: '/img/p3.jpg',
-        title: 'The Dandy chair',
+        title: 'Rustic Vase Set',
         price: 150
     },
     {
         id: 3,
         img: '/img/p4.jpg',
-        title: 'The Dandy chair',
+        title: 'The Lucy Lamp',
         price: 155
     },
 ]);
 </script>
 <style lang="scss" scoped>
+.products-container {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
 .products {
-    display: grid;
+    display: flex;
+    justify-content: space-between;
     grid-template-columns: repeat (4, 1fr );
     gap: 20px;
+    margin-bottom: 50px;
+    &-link {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 </style>
