@@ -1,0 +1,69 @@
+
+@font-face {
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Satoshi-Bold'),
+   url('../../../public/fonts/Satoshi-Bold.woff2') format('woff2');
+  
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Satoshi-Medium'),
+   url('../../../public/fonts/Satoshi-Medium.woff2') format('woff2');
+   
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Satoshi-Regular'),
+   url('../../../public/fonts/Satoshi-Regular.woff2') format('woff2');
+   
+  font-display: swap;
+}
+:root {
+  --primary: #6979f8;
+  --primary-hover: #A5AFFB;
+  --second: #BE52F2;
+  --second-hover: #DBA5F5;
+  --success: #00C48C;
+  --success-hover: #7DDFC3;
+  --info: #0084F4;
+  --info-hover: #66B5F8;
+  --warning: #FFA26B;
+  --warning-hover: #FFC7A6;
+  --danger: #FF647C;
+  --danger-hover: #FDAFBB;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fafafa;
+  margin: 0 auto;
+  font-family: 'Satoshi', sans-serif;
+  font-size: 14px;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.line {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  &_block {
+    display: block;
+  }
+}

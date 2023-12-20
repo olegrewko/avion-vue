@@ -22,6 +22,7 @@ import Ideas from "@/components/layout/Ideas.vue";
 
 
 <style lang="scss">
+@import "./assets/styles/global.scss";
 @import url('https://fonts.cdnfonts.com/css/satoshi');
 @import url('https://fonts.cdnfonts.com/css/clash-display');
  body {

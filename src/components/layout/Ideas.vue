@@ -35,11 +35,16 @@
 
     &__info {
         background: #2A254B;
-                    
-        margin-right: 10px;
+        margin-right: 16px;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: space-between;
         display: flex;
+        padding: 14px 35px 14px 35px;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: flex-end;
+        align-items: flex-start;
+        gap: 205px;
 
         &-text {
             text-align: left;
@@ -72,16 +77,22 @@
         }
 
         &-link {
+            background: rgba(249, 249, 249, 0.15);
             text-align: left;
-            // display: flex;
-            // justify-content: flex-start;
-            // margin: 0 20px;
+            display: flex;
+            justify-content: center;
+            padding: 16px 32px;
+            align-items: center;
+            gap: 10px;
+            width: 170px;
+            height: 56px;
             color: #fff;
             text-decoration: none;
             cursor: pointer;
             transition: all .3s;
 
             &:hover {
+                background: rgba(249, 249, 249, 0.1);
                 text-decoration: underline;
                 cursor: pointer;
                 transition: all .3s;
