@@ -27,6 +27,7 @@ import Footer from "@/components/layout/Footer.vue";
 
 
 <style lang="scss">
+@import "./assets/styles/normalize.css";
 @import "./assets/styles/global.scss";
 @import url('https://fonts.cdnfonts.com/css/satoshi');
 @import url('https://fonts.cdnfonts.com/css/clash-display');

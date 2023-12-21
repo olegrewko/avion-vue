@@ -116,13 +116,22 @@
 
 * {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
-
+// html { 
+// overflow-x: hidden!important;
+// }
 body {
+  max-width: 1440px;  
   background: #fafafa;
-  margin: 0 auto;
-  font-family: 'Satoshi', sans-serif;
+    
   font-size: 14px;
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: 'Satoshi', sans-serif;
 }
 
 a {

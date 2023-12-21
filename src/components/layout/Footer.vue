@@ -29,11 +29,12 @@
                             
                         </div>
                     </div>
-                    <form class="footer-content-top-menu__form">
-                    <input class="footer-content-top-menu__form_input" type="text" placeholder="youremail">
-                    <button class="footer-content-top-menu__form_btn">Sign up</button>
-                    </form> 
+                    
                 </div>
+                <form class="footer-content-top-menu__form">
+                        <input class="footer-content-top-menu__form_input" type="text" placeholder="youremail">
+                        <button class="footer-content-top-menu__form_btn">Sign up</button>
+                </form> 
             </div>
             <div class="footer-content-bottom">
             <div class="footer-content-bottom__copyright">
@@ -75,18 +76,18 @@
         padding: 50px 80px 20px 80px;
     &-top {
         display: grid;
-        grid-template-columns: 540px 1fr;
+        grid-template-columns: 700px 1fr;
         column-gap: 100px;
 
         &-menu {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr) ;
-            column-gap: 100px;
+            
 
-            // &__columns {
-              
+            &__columns {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                column-gap: 10px;
                
-            // }
+            }
              &__column {
 
                     &_title {
