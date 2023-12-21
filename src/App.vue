@@ -5,6 +5,8 @@
         <aboutbrand />
         <product4  />
         <ideas  />
+        <subscribe  />
+        <footer  />
         
 
     </div>
@@ -16,6 +18,8 @@ import Hero from "@/components/layout/Hero.vue";
 import Aboutbrand from "@/components/layout/Aboutbrand.vue";
 import Product4 from "@/components/layout/Product4.vue";
 import Ideas from "@/components/layout/Ideas.vue";
+import Subscribe from "@/components/layout/Subscribe.vue";
+import Footer from "@/components/layout/Footer.vue";
 
 </script>
 
@@ -23,8 +27,8 @@ import Ideas from "@/components/layout/Ideas.vue";
 
 <style lang="scss">
 @import "./assets/styles/global.scss";
-@import url('https://fonts.cdnfonts.com/css/satoshi');
-@import url('https://fonts.cdnfonts.com/css/clash-display');
+// @import url('https://fonts.cdnfonts.com/css/satoshi');
+// @import url('https://fonts.cdnfonts.com/css/clash-display');
  body {
     margin: 0;
     padding: 0;

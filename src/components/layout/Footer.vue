@@ -1,0 +1,159 @@
+<template>
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-content-top">
+                <div class="footer-content-top-menu">
+                    <div class="footer-content-top-menu__columns">
+                        <div class="footer-content-top-menu__column">
+                            <span class="footer-content-top-menu__column_title">Menu</span>
+                            <span class="footer-content-top-menu__column_link">New arrivals</span>
+                            <span class="footer-content-top-menu__column_link">Best sellers</span>
+                            <span class="footer-content-top-menu__column_link">Recently viewed</span>
+                            <span class="footer-content-top-menu__column_link">Popular this week</span>
+                            <span class="footer-content-top-menu__column_link">All products</span>
+                        </div>
+                        <div class="footer-content-top-menu__column">
+                            <span class="footer-content-top-menu__column_title">Categories</span>
+                            <span class="footer-content-top-menu__column_link">Crockery</span>
+                            <span class="footer-content-top-menu__column_link">Furniture</span>
+                            <span class="footer-content-top-menu__column_link">Homeware</span>
+                            <span class="footer-content-top-menu__column_link">Plant pots</span>
+                            <span class="footer-content-top-menu__column_link">Chairs</span>
+                            <span class="footer-content-top-menu__column_link">Chairs</span>
+                        </div>
+                        <div class="footer-content-top-menu__column">
+                            <span class="footer-content-top-menu__column_title">Our company</span>
+                            <span class="footer-content-top-menu__column_link">About us</span>
+                            <span class="footer-content-top-menu__column_link">Vacancies</span>
+                            <span class="footer-content-top-menu__column_link">Contact us</span>
+                            
+                        </div>
+                    </div>
+                    <form class="footer-content-top-menu__form">
+                    <input class="footer-content-top-menu__form_input" type="text" placeholder="youremail">
+                    <button class="footer-content-top-menu__form_btn">Sign up</button>
+                    </form> 
+                </div>
+            </div>
+            <div class="footer-content-bottom">
+            <div class="footer-content-bottom__copyright">
+                Copyright 2022 Avion LTD
+            </div>
+            <div class="footer-content-bottom__social">
+                <a class="footer-content-bottom__social_link" href="">
+                    <img src="../../../public/svg/Logo--linkedin.svg" alt="Logo--linkedin.svg">
+                </a> 
+                <a class="footer-content-bottom__social_link" href="">
+                    <img src="../../../public/svg/Logo--facebook.svg" alt="Logo--linkedin.svg">
+                </a> 
+                <a class="footer-content-bottom__social_link" href="">
+                    <img src="../../../public/svg/Logo--instagram.svg" alt="Logo--linkedin.svg">
+                </a> 
+                <a class="footer-content-bottom__social_link" href="">
+                    <img src="../../../public/svg/Logo--skype.svg" alt="Logo--linkedin.svg">
+                </a> 
+                <a class="footer-content-bottom__social_link" href="">
+                    <img src="../../../public/svg/Logo--twitter.svg" alt="Logo--linkedin.svg">
+                </a> 
+                <a class="footer-content-bottom__social_link" href="">
+                    <img src="../../../public/svg/Logo--pinterest.svg" alt="Logo--linkedin.svg">
+                </a> 
+            </div>
+            </div>
+        </div>
+    </div>
+</template>
+<script></script>
+<style lang="scss" scoped>
+.footer {
+    width: 1440px;
+    height: 380px;
+    background: #2A254B;
+    color: #fff;
+
+    &-content {
+        padding: 50px 80px 20px 80px;
+    &-top {
+        display: grid;
+        grid-template-columns: 540px 1fr;
+        column-gap: 100px;
+
+        &-menu {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr) ;
+            column-gap: 100px;
+
+            &__columns {
+              
+               
+            }
+             &__column {
+
+                    &_title {
+                        color:  #FFF;
+                        font-family: Clash Display;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        margin-bottom: 10px;
+                    }
+                    &_link {
+                        color:  #FFF;
+                        font-family: Satoshi;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;
+                        margin-bottom: 10px;
+                    }
+
+                }
+            &__form {
+                 display: flex;
+            justify-content: center;
+            align-items: center;
+            &__input {
+                display: flex;
+                padding: 17px 205px 17px 32px;
+                align-items: center;
+                flex: 1 0 0;
+                align-self: stretch;
+            }
+            &__btn {
+                width: 118px;
+                height: 56px;
+                display: flex;
+                padding: 16px 32px;
+                align-items: center;
+                gap: 10px;
+                background: #fff;
+                color: #2A254B;
+            }
+            }
+
+        }
+    }
+    &-bottom {
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        &__copyright {
+            color: var(--White, #FFF);
+            font-family: Satoshi;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        &__social {
+            &_link {
+              width: 24px;
+              height: 24px;  
+            }
+        }
+    }
+}
+}
+</style>
