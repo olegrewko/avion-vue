@@ -63,10 +63,10 @@
         </div>
     </div>
 </template>
-<script></script>
+
 <style lang="scss" scoped>
-.footer {
-    width: 1440px;
+ .footer {
+    max-width: 1440px;
     height: 380px;
     background: #2A254B;
     color: #fff;
@@ -83,15 +83,16 @@
             grid-template-columns: repeat(3, 1fr) ;
             column-gap: 100px;
 
-            &__columns {
+            // &__columns {
               
                
-            }
+            // }
              &__column {
 
                     &_title {
                         color:  #FFF;
-                        font-family: Clash Display;
+                        
+                        font-family: 'Clash Display', sans-serif;
                         font-size: 16px;
                         font-style: normal;
                         font-weight: 400;
@@ -100,7 +101,7 @@
                     }
                     &_link {
                         color:  #FFF;
-                        font-family: Satoshi;
+                        font-family: 'Satoshi', sans-serif;
                         font-size: 14px;
                         font-style: normal;
                         font-weight: 300;
@@ -141,7 +142,7 @@
 
         &__copyright {
             color: var(--White, #FFF);
-            font-family: Satoshi;
+            font-family: 'Satoshi';
             font-size: 14px;
             font-style: normal;
             font-weight: 400;
@@ -154,6 +155,6 @@
             }
         }
     }
-}
-}
+ }
+ }
 </style>

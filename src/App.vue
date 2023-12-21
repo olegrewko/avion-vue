@@ -6,7 +6,8 @@
         <product4  />
         <ideas  />
         <subscribe  />
-        <footer  />
+        <Footer  />
+        
         
 
     </div>
@@ -27,8 +28,8 @@ import Footer from "@/components/layout/Footer.vue";
 
 <style lang="scss">
 @import "./assets/styles/global.scss";
-// @import url('https://fonts.cdnfonts.com/css/satoshi');
-// @import url('https://fonts.cdnfonts.com/css/clash-display');
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+@import url('https://fonts.cdnfonts.com/css/clash-display');
  body {
     margin: 0;
     padding: 0;
