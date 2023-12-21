@@ -48,30 +48,32 @@
                 </div> -->
 
             </div>
+            
             <div class="footer-content-bottom">
-            <div class="footer-content-bottom__copyright">
-                Copyright 2022 Avion LTD
-            </div>
-            <div class="footer-content-bottom__social">
-                <a class="footer-content-bottom__social_link" href="">
-                    <img src="../../../public/svg/Logo--linkedin.svg" alt="Logo--linkedin.svg">
-                </a> 
-                <a class="footer-content-bottom__social_link" href="">
-                    <img src="../../../public/svg/Logo--facebook.svg" alt="Logo--linkedin.svg">
-                </a> 
-                <a class="footer-content-bottom__social_link" href="">
-                    <img src="../../../public/svg/Logo--instagram.svg" alt="Logo--linkedin.svg">
-                </a> 
-                <a class="footer-content-bottom__social_link" href="">
-                    <img src="../../../public/svg/Logo--skype.svg" alt="Logo--linkedin.svg">
-                </a> 
-                <a class="footer-content-bottom__social_link" href="">
-                    <img src="../../../public/svg/Logo--twitter.svg" alt="Logo--linkedin.svg">
-                </a> 
-                <a class="footer-content-bottom__social_link" href="">
-                    <img src="../../../public/svg/Logo--pinterest.svg" alt="Logo--linkedin.svg">
-                </a> 
-            </div>
+                <div class="footer-content-bottom__copyright">
+                    Copyright 2022 Avion LTD
+                </div>
+
+                <div class="footer-content-bottom__social">
+                    <a class="footer-content-bottom__social_link" href="">
+                        <img src="../../../public/svg/Logo--linkedin.svg" alt="Logo--linkedin.svg">
+                    </a> 
+                    <a class="footer-content-bottom__social_link" href="">
+                        <img src="../../../public/svg/Logo--facebook.svg" alt="Logo--linkedin.svg">
+                    </a> 
+                    <a class="footer-content-bottom__social_link" href="">
+                        <img src="../../../public/svg/Logo--instagram.svg" alt="Logo--linkedin.svg">
+                    </a> 
+                    <a class="footer-content-bottom__social_link" href="">
+                        <img src="../../../public/svg/Logo--skype.svg" alt="Logo--linkedin.svg">
+                    </a> 
+                    <a class="footer-content-bottom__social_link" href="">
+                        <img src="../../../public/svg/Logo--twitter.svg" alt="Logo--linkedin.svg">
+                    </a> 
+                    <a class="footer-content-bottom__social_link" href="">
+                        <img src="../../../public/svg/Logo--pinterest.svg" alt="Logo--linkedin.svg">
+                    </a> 
+                </div>
             </div>
         </div>
     </div>
@@ -87,10 +89,8 @@
     &-content {
         padding: 50px 80px 20px 80px;
     &-top {
-        display: grid;
-        grid-template-columns: 500px 1fr;
-        column-gap: 100px;
-
+        
+        border-bottom: 1px solid #4E4D93;
         &-menu {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -111,7 +111,7 @@
                         font-family: 'Clash Display', sans-serif;
                         font-size: 16px;
                         font-style: normal;
-                        font-weight: 400;
+                        font-weight: 300;
                         line-height: normal;
                         margin-bottom: 10px;
                     }
@@ -159,6 +159,7 @@
 
         }
     }
+   
     &-bottom {
         padding-top: 20px;
         display: flex;
@@ -173,9 +174,12 @@
             line-height: normal;
         }
         &__social {
+            display: flex;
+            justify-content: space-between;
             &_link {
               width: 24px;
-              height: 24px;  
+              height: 24px;
+              margin-right: 10px;  
             }
         }
     }

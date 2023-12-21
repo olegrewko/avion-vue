@@ -41,7 +41,7 @@
         color:  #2A254B;
 
         /* Headings / H3 */
-        font-family: Clash Display;
+        font-family: 'Clash Display';
         font-size: 24px;
         font-style: normal;
         font-weight: 400;
@@ -52,7 +52,7 @@
             color: #5B5676;
 
             /* Body / Large */
-            font-family: Satoshi;
+            // font-family: 'Satoshi';
             font-size: 18px;
             font-style: normal;
             font-weight: 400;

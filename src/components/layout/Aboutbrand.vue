@@ -57,7 +57,7 @@ const aboutbrands = [
     color:  #2A254B;
 
     /* Headings / H3 */
-    font-family: Clash Display;
+    font-family: 'Clash Display';
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
