@@ -6,7 +6,7 @@
         <product4  />
         <ideas  />
         <subscribe  />
-        <Footer  />
+        <footer  />
         
         
 

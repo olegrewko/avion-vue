@@ -29,12 +29,24 @@
                             
                         </div>
                     </div>
+
+                    <div class="footer-content-top-menu__subscribe">
+                        <span class="footer-content-top-menu__column_title">Join our mailing list</span>
+                        <form class="footer-content-top-menu__form">
+                                <input class="footer-content-top-menu__form_input" type="text" placeholder="youremail">
+                                <button class="footer-content-top-menu__form_btn">Sign up</button>
+                        </form>
+                    </div>
                     
                 </div>
+                <!-- <div class="footer-content-top-menu__subscribe">
+                <span class="footer-content-top-menu__column_title">Join our mailing list</span>
                 <form class="footer-content-top-menu__form">
                         <input class="footer-content-top-menu__form_input" type="text" placeholder="youremail">
                         <button class="footer-content-top-menu__form_btn">Sign up</button>
-                </form> 
+                </form>
+                </div> -->
+
             </div>
             <div class="footer-content-bottom">
             <div class="footer-content-bottom__copyright">
@@ -76,21 +88,24 @@
         padding: 50px 80px 20px 80px;
     &-top {
         display: grid;
-        grid-template-columns: 700px 1fr;
+        grid-template-columns: 500px 1fr;
         column-gap: 100px;
 
         &-menu {
-            
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 0px;
 
             &__columns {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
-                column-gap: 10px;
+                // column-gap: 10px;
                
             }
-             &__column {
-
+            &__column {
+                display: block;
                     &_title {
+                        display: block;
                         color:  #FFF;
                         
                         font-family: 'Clash Display', sans-serif;
@@ -101,6 +116,7 @@
                         margin-bottom: 10px;
                     }
                     &_link {
+                        display: block;
                         color:  #FFF;
                         font-family: 'Satoshi', sans-serif;
                         font-size: 14px;
@@ -111,23 +127,30 @@
                     }
 
                 }
+            &__subscribe {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+            }    
             &__form {
                  display: flex;
-            justify-content: center;
-            align-items: center;
-            &__input {
+                justify-content: center;
+                align-items: center;
+            &_input {
+                width: 509px;
+                height: 56px;
                 display: flex;
                 padding: 17px 205px 17px 32px;
                 align-items: center;
                 flex: 1 0 0;
                 align-self: stretch;
             }
-            &__btn {
+            &_btn {
                 width: 118px;
                 height: 56px;
                 display: flex;
                 padding: 16px 32px;
-                align-items: center;
+                align-items: flex-start;
                 gap: 10px;
                 background: #fff;
                 color: #2A254B;
