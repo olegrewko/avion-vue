@@ -56,10 +56,10 @@
 
                 <div class="footer-content-bottom__social">
                     <a class="footer-content-bottom__social_link" href="">
-                        <img src="../../../public/svg/Logo--linkedin.svg" alt="Logo--linkedin.svg">
+                        <img src="../../../public/svg/Logo--linkedin.png" alt="Logo--linkedin.svg">
                     </a> 
                     <a class="footer-content-bottom__social_link" href="">
-                        <img src="../../../public/svg/Logo--facebook.svg" alt="Logo--linkedin.svg">
+                        <img src="../../../public/svg/facebook.svg" alt="Logo--linkedin.svg">
                     </a> 
                     <a class="footer-content-bottom__social_link" href="">
                         <img src="../../../public/svg/Logo--instagram.svg" alt="Logo--linkedin.svg">
@@ -94,12 +94,21 @@
         &-menu {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            column-gap: 0px;
+            column-gap: 10px;
+              @media screen and (max-width: 1024px){
+       
+                        grid-template-columns:  1fr ;
+                        gap: 5px;
+                    }
 
             &__columns {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
-                // column-gap: 10px;
+                  @media screen and (max-width: 1024px){
+       
+                        grid-template-columns: repeat (2, 1fr );
+                        gap: 5px;
+                    }
                
             }
             &__column {

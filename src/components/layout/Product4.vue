@@ -50,9 +50,14 @@ const products = ref([
 .products {
     display: flex;
     justify-content: space-between;
-    grid-template-columns: repeat (4, 1fr );
+    // grid-template-columns: repeat (4, 1fr );
     gap: 20px;
     margin-bottom: 50px;
+    @media screen and (max-width: 1024px){
+        flex-wrap: wrap;
+    grid-template-columns: repeat (2, 1fr );
+    gap: 10px;
+    }
     &-link {
         display: block;
         text-align: center;
