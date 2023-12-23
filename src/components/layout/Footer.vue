@@ -56,10 +56,10 @@
 
                 <div class="footer-content-bottom__social">
                     <a class="footer-content-bottom__social_link" href="">
-                        <img src="../../../public/svg/Logo--linkedin.png" alt="Logo--linkedin.svg">
+                        <img src="../../../svg/Logo--linkedin.svg" alt="Logo--linkedin.svg">
                     </a> 
                     <a class="footer-content-bottom__social_link" href="">
-                        <img src="../../../public/svg/facebook.svg" alt="Logo--linkedin.svg">
+                        <img src="../../../svg/Logo--facebook.svg" alt="Logo--linkedin.svg">
                     </a> 
                     <a class="footer-content-bottom__social_link" href="">
                         <img src="../../../public/svg/Logo--instagram.svg" alt="Logo--linkedin.svg">

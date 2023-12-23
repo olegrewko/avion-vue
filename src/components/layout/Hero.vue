@@ -23,7 +23,7 @@
     justify-content: flex-end;
     padding-right: 50px;
     &-img {
-        min-width: 100%;
+        max-width: 100%;
     }
     &-info {
        background: #fff;
@@ -33,6 +33,7 @@
        display: flex;
        flex-direction: column;
        justify-content: space-between;
+       
        &-text {
         text-align: left;
        }

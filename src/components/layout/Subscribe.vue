@@ -26,8 +26,8 @@
 </template>
 <style lang="scss" scoped>
 .subscribe {
-    width: 1440px;
-    height: 440px;
+    max-width: 1440px;
+    min-height: 440px;
     background: #474646;
 
     display: flex;

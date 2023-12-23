@@ -11,28 +11,32 @@
 
         </div>
         <div class="ideas-right">
-            <img class="ideas-right-img" src="" alt="">
+            <img class="ideas-right-img" src="/img/ImageBlock.jpg" alt="">
         </div>
     </div>
 </template>
 <style lang="scss" scoped>
 .ideas {
-    width: 1440px;
-    height: 600px;
+    max-width: 1440px;
+    min-height: 600px;
     background: #fff;
 
     display: flex;
-    flex-wrap: wrap;
+    
     align-items: center;
     justify-content: center;
     padding: 60px 80px;
-
+    @media screen and (max-width: 1024px){
+      flex-wrap: wrap;
+      padding: 5px 5px;  
+    }
   
  &-left {
       background: #2A254B;  
-      width: 634px;
-      height: 478px;
+      max-width: 630px;
+      min-height: 478px;
       margin-right: 10px;
+      margin-bottom: 10px;
 
     &__info {
         background: #2A254B;
@@ -45,7 +49,7 @@
         flex-direction: column;
         justify-content: flex-end;
         align-items: flex-start;
-        gap: 205px;
+        // gap: 205px;
 
         &-text {
             text-align: left;
@@ -102,13 +106,13 @@
     }
 }
 &-right {
-    width: 634px;
-    height: 478px;
-    background: url(/img/ImageBlock.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    max-width: 630px;
+    min-height: 478px;
+    // background: url(/img/ImageBlock.jpg);
+    // background-size: cover;
+    // background-repeat: no-repeat;
     &-img {
-        min-width: 100%;
+        max-width: 100%;
     }
 }
 }
