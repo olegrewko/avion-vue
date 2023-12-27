@@ -3,18 +3,23 @@
           
                 <div class="hero-info">
                     <div class="hero-info-text">
-                    <h2 class="hero-info__title">Luxury homeware for people who love timeless design quality</h2>
-                    <span class="hero-info__desc">Shop the new Spring 2022 collection today</span> 
+                      <h2 class="hero-info__title">Luxury homeware for people who love timeless design quality</h2>
+                      <span class="hero-info__desc">Shop the new Spring 2022 collection today</span> 
                     </div>
+                    <button class="hero-info-btn">
                     <a class="hero-info-link" href="">View collection</a>
+                    </button>
+                                  
                 </div>
-                  
+                <!-- <div class="hero-min-img">
+                    <img src="/img/hb570.png" alt="/img/hb570.png">
+                </div> -->
     </div>
 </template>
 <style lang="scss" scoped>
 .hero {
-    width: 1440px;
-    height: 704px;
+    max-width: 1440px;
+    min-height: 704px;
     background: url(/img/hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -22,20 +27,59 @@
     align-items: center;
     justify-content: flex-end;
     padding-right: 50px;
-    &-img {
-        max-width: 100%;
-    }
+            @media screen and (max-width: 767px){
+                height: auto;
+                background: transparent;
+                padding-right: 0;
+            }
+            &-img {
+               max-width: 100%;                  
+
+            }
+    
     &-info {
        background: #fff;
-       max-width: 530px;
+       max-width: 630px;
        padding: 50px 50px;
-       height: 340px;
+       min-height: 340px;
        display: flex;
        flex-direction: column;
        justify-content: space-between;
-       
+       align-items: flex-start;
+           @media screen and (max-width: 767px){
+                padding: 40px 20px 20px 20px;
+                min-height: 0;
+    }
        &-text {
-        text-align: left;
+                @media screen and (max-width: 767px){
+                margin-bottom: 30px;
+    }
+}
+       &-btn {
+    background-color: lightgray;
+    color: black;
+    
+    font-size: 12px;
+    cursor: pointer;
+    margin: 3px 0;
+    border: none;
+    display: flex;
+    width: 337px;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+     &:hover {
+      color: grey;
+      transition: all 0.3s;
+      border: none;
+      transition: all 0.3s;
+
+    }
+                @media screen and (max-width: 767px){
+                width: 100%;
+    }
        }
        &__title {
         text-align: left;
@@ -77,5 +121,6 @@
     }
 
 }
+
 
 </style>

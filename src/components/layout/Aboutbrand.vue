@@ -48,8 +48,9 @@ const aboutbrands = [
 </script>
 <style lang="scss">
 .about-brand {
-//    width: 1440px;
-//    height: 476px; 
+   max-width: 1440px;
+   width: 100%;
+   min-height: 476px; 
    padding: 80px 80px 130px 80px ;
    &__title {
     text-align: center;
@@ -64,17 +65,16 @@ const aboutbrands = [
     line-height: 140%; /* 33.6px */
    }
    &-elements {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
     
-    display: grid;
-    grid-template-columns: repeat(4, 320px);
-    justify-content: space-around;
-    gap: 10px;
-    text-align: left;
-    @media screen and (max-width: 1024px){
-    grid-template-columns: repeat (2, 1fr );
-    gap: 5px;
-    text-align: center;
-    }
+        
+
+        @media screen and (max-width: 1024px){
+            flex-wrap: wrap;
+        
+        }
   
     &__image {
         display: block;
@@ -107,9 +107,9 @@ const aboutbrands = [
   
 }
 .about-brand-element {
-    width: 280px;
+    max-width: 280px;
     height: auto;
-    padding: 30px;
+    padding: 10px;
     background-color: #F9F9F9;
 }
 </style>

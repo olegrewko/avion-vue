@@ -1,8 +1,13 @@
 <template>
   <header class="header">
     <div class="header-top">
-        <div class="header-top-search">
-            <img src="/svg/header-search.svg" alt="svg/header-search.svg">
+        <div class="header-top-left">
+            <div class="header-top-search">
+             <img src="/svg/header-search.svg" alt="svg/header-search.svg">
+            </div>
+            <div class="header-top-mobile">
+             <img src="/svg/menu-mobile.svg" alt="svg/menu-mobile.svg">
+            </div>
         </div>
         <a class="header-logo" href="">Avion</a>
         <div class="header-top-right">
@@ -25,6 +30,9 @@
         </a>
     </div>
     <router-link to="/"></router-link>
+    <!-- <div class="header-menu-mobile">
+
+    </div> -->
   </header>
 </template>
 <script setup>
@@ -62,12 +70,13 @@ const menu = [
 </script>
 <style lang="scss" scoped>
 .header {
+  position: relative;
   background: #fff;
   font-weight: bold;
   padding: 0 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
-  width: 1440px;
-  height: 132px;
+  max-width: 1440px;
+  min-height: 132px;
 
 //   display: flex;
 //   align-items: center;
@@ -80,15 +89,40 @@ const menu = [
     align-items: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     margin: 0 20px;
-    height: 70px;
+    min-height: 70px;
+     @media screen and (max-width: 767px){
+      height: auto;  
+      margin: 0;
+      display: flex;
+      justify-content: space-between;  
+    }
+    &-left {
+        display: flex;
+        justify-content: space-between; 
+    }
+    &-mobile {
+        display: none;
+         @media screen and (max-width: 767px){
+            display: block;
+            height: auto;  
+            margin: 0;
+         
+    }
+    }
     &-search {
         display: flex;
         justify-content: start;
+         @media screen and (max-width: 767px){
+     order: 2;  
+    }
     }
     &-right {
         display: flex;
         align-items: center;
         justify-content: flex-end;
+           @media screen and (max-width: 767px){
+            display: none;
+            }
         &__user {
             margin-left: 10px;
         }
@@ -103,6 +137,9 @@ const menu = [
     line-height: normal;
     text-decoration: none;
     text-align: center;
+     @media screen and (max-width: 767px){
+            order: 1;
+            }
     &:hover {
         text-decoration: underline;
     }
@@ -116,7 +153,23 @@ const menu = [
     display: flex;
     justify-content: center;
     align-items: center;
+     @media screen and (max-width: 767px){
+      display: none;  
+      border: none;  
+    }
+    &-mobile {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 40px 20px;
+        &__link {
+            display: block;
+        }
+    }
     &__link {
+
         margin: 0 20px;
         color: #22202E;
         text-decoration: none;

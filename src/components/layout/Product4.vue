@@ -49,14 +49,14 @@ const products = ref([
 }
 .products {
     display: flex;
-    justify-content: space-between;
-    // grid-template-columns: repeat (4, 1fr );
-    gap: 20px;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10px;
     margin-bottom: 50px;
     @media screen and (max-width: 1024px){
         flex-wrap: wrap;
-    grid-template-columns: repeat (2, 1fr );
-    gap: 10px;
+    padding: 10px;
+    margin: 5px;
     }
     &-link {
         display: block;

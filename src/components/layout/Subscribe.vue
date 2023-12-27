@@ -34,7 +34,7 @@
     align-items: center;
     justify-content: center;
     padding: 0px 0px;
-    margin: 0 100px 0 0;
+    margin: 0 0px 0 0;
     &-content {
         max-width: 600px;
         margin: auto;

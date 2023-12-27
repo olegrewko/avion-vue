@@ -35,20 +35,20 @@
       background: #2A254B;  
       max-width: 630px;
       min-height: 478px;
-      margin-right: 10px;
-      margin-bottom: 10px;
+      margin: 5px;
+      margin-bottom: 5px;
 
     &__info {
         background: #2A254B;
         margin-right: 16px;
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: space-between;
         display: flex;
-        padding: 14px 35px 14px 35px;
         flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-start;
+        justify-content: space-between;
+        min-height: 478px;
+        padding: 14px 35px 14px 35px;
+        // flex-direction: column;
+        // justify-content: flex-end;
+        align-items: stretch;
         // gap: 205px;
 
         &-text {
@@ -108,11 +108,13 @@
 &-right {
     max-width: 630px;
     min-height: 478px;
+    margin: 5px;
     // background: url(/img/ImageBlock.jpg);
     // background-size: cover;
     // background-repeat: no-repeat;
     &-img {
-        max-width: 100%;
+        width: 100%;
+        height: auto;
     }
 }
 }

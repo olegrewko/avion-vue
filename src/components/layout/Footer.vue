@@ -82,7 +82,7 @@
 <style lang="scss" scoped>
  .footer {
     max-width: 1440px;
-    height: 380px;
+    // min-height: 380px;
     background: #2A254B;
     color: #fff;
 
@@ -98,17 +98,22 @@
               @media screen and (max-width: 1024px){
        
                         grid-template-columns:  1fr ;
-                        gap: 5px;
+                        gap: 10px;
                     }
 
             &__columns {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                  @media screen and (max-width: 1024px){
+                display: flex;
+                flex-wrap: wrap;
+                gap: 50px;
+                 @media screen and (max-width: 450px){
+                        flex-wrap: wrap;
+                }
+                // grid-template-columns: repeat(3, 1fr);
+                //   @media screen and (max-width: 1024px){
        
-                        grid-template-columns: repeat (2, 1fr );
-                        gap: 5px;
-                    }
+                //         grid-template-columns: repeat (2, 1fr );
+                //         gap: 5px;
+                //     }
                
             }
             &__column {
@@ -145,18 +150,22 @@
                  display: flex;
                 justify-content: center;
                 align-items: center;
+                  @media screen and (max-width: 450px){
+                        flex-wrap: wrap;
+                }
             &_input {
-                width: 509px;
-                height: 56px;
+                max-width: 509px;
+                min-height: 56px;
                 display: flex;
                 padding: 17px 205px 17px 32px;
                 align-items: center;
                 flex: 1 0 0;
                 align-self: stretch;
+                background-color: #8275d7;
             }
             &_btn {
-                width: 118px;
-                height: 56px;
+                max-width: 118px;
+                min-height: 56px;
                 display: flex;
                 padding: 16px 32px;
                 align-items: flex-start;

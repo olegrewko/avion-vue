@@ -38,9 +38,10 @@ const props = defineProps({
         
 
     }
-    &-img {
+    &-image {
         display: block;
-        text-align: left;
+        text-align: center;
+        margin: 5px;
         margin-bottom: 24px;
     }
     &-name {
